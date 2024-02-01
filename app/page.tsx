@@ -4,7 +4,7 @@ import Footer from '@/components/footer'
 
 export default function Home() {
   return (
-    <main className="flex flex-col xl:flex-row flex-1 h-full w-full gap-10">
+    <main className="container mx-auto flex flex-col xl:flex-row flex-1 h-full w-full gap-6 xl:gap-10">
       {/* {Left Side} */}
       <LeftSide />
       {/* {Right Side} */}

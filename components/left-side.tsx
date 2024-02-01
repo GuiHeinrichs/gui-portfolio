@@ -7,7 +7,7 @@ import { siteConfig } from "@/app/config/site-config";
 
 function LeftSide() {
     return (
-      <div className="flex-1 p-8 w-full h-full xl:max-w-md">
+      <div className="flex-1 p-8 px-8 w-full xl:h-full xl:max-w-md">
         <div className="w-full h-full rounded-md flex flex-col space-y-6">
           {/* {Image} */}
           <div>

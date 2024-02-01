@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import localFont from "next/font/local"
+import { siteConfig } from './config/site-config'
 
 const sfPRO = localFont({
   src: [
@@ -38,8 +39,8 @@ const sfPRO = localFont({
   ]
 });
 export const metadata: Metadata = {
-  title: 'João Guilherme Heinrichs',
-  description: 'Software Engineer',
+  title: "João Guilherme Heinrichs",
+  description: siteConfig.description,
 }
 
 export default function RootLayout({
