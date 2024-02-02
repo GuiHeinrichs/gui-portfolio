@@ -39,7 +39,7 @@ function RightSide() {
         {/* Grid Container */}
         <div
           ref={scope}
-          className="w-full h-full xl:overflow-y-auto p-6 grid grid-cols-1 md:grid-cols-4 auto-rows-[76px] gap-6 xl:gap-10"
+          className="w-full md:h-full xl:overflow-y-auto p-6 grid grid-cols-2 md:grid-cols-4 auto-rows-[76px] gap-6 xl:gap-10"
         >
           {siteConfig.item.map((item, index) => {
             return (

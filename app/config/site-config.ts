@@ -32,7 +32,7 @@ const GridItems: GridItemInterface[] = [
         title: "Journey resume 👦🏻",
         icon: "discord",
         username: "@GuiHeinrichs",
-        description: "I'm programmer enthusiast, working since 2021 with software developing, actually working as FullStack developer. I'm 22 years old, systems analysis and development student. Over this journey, I have acquired a solid set of technical skills that allow me to develop efficient and high performance applications.",
+        description: "I'm 22 years old programmer enthusiast, working since 2021 with software developing. Currently working as FullStack developer. Systems analysis and development student.",
         color: "#171717",
         buttonLink: "https://github.com/GuiHeinrichs"
     },
@@ -45,7 +45,7 @@ const GridItems: GridItemInterface[] = [
         color: "#0a66c2",
         buttonTitle: "Connect",
         buttonLink: "https://www.linkedin.com/in/jo%C3%A3o-guilherme-heinrichs/",
-        buttonSecondaryTitle: "260+"
+        buttonSecondaryTitle: "264"
     },
     {
         layout: "1x2",
