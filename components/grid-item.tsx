@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { motion } from "framer-motion";
 
 const variants = cva(
-    "shadow-grid rounded-3xl bg-white dark:bg-neutral-900 flex flex-col justify-center @container",
+    "hover:bg-neutral-50 hover:dark:bg-neutral-800 shadow-grid rounded-3xl bg-white dark:bg-neutral-900 flex flex-col justify-center @container",
     {
         variants: {
             size: {
