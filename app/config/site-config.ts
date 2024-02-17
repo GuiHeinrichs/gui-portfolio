@@ -5,6 +5,7 @@ export type GridItemType = "social" | "project" | "tech" | "bio";
 export type TechItemType = {
     title: string;
     link: string;
+    techIcon: string;
 }
 
 export interface GridItemInterface {
@@ -66,75 +67,93 @@ const GridItems: GridItemInterface[] = [
         techs: [
             {
                 title: "JavaScript",
-                link: ""
+                link: "",
+                techIcon: "JavaScript"
             },
             {
                 title: "TypeScript",
-                link: ""
+                link: "",
+                techIcon: "TypeScript"
             },
             {
                 title: "ReactJS",
-                link: ""
+                link: "",
+                techIcon: "React"
             },
             {
                 title: "CSharp",
-                link: ""
+                link: "",
+                techIcon: "C#"
             },
             {
                 title: "HTML",
-                link: ""
+                link: "",
+                techIcon: "Html"
             },
             {
                 title: "CSS",
-                link: ""
+                link: "",
+                techIcon: "Css"
             },
             {
                 title: "Tailwindcss",
-                link: ""
+                link: "",
+                techIcon: "TailWind"
             },
             {
                 title: "Framer Motion",
-                link: ""
+                link: "",
+                techIcon: "FramerMotion"
             },
             {
                 title: "NextJs",
-                link: ""
+                link: "",
+                techIcon: "NextJs"
             },
             {
                 title: "NodeJS",
-                link: ""
+                link: "",
+                techIcon: "NodeJs"
             },
             {
                 title: ".NetCore",
-                link: ""
+                link: "",
+                techIcon: "C#"
             },
             {
                 title: "LINQ",
-                link: ""
+                link: "",
+                techIcon: "C#"
             },
             {
                 title: "Entity",
-                link: ""
+                link: "",
+                techIcon: "C#"
             },
             {
                 title: "Dapper",
-                link: ""
+                link: "",
+                techIcon: "C#"
             },
             {
                 title: "SQLServer",
-                link: ""
+                link: "",
+                techIcon: "SqlServer"
             },
             {
                 title: "Git",
-                link: ""
+                link: "",
+                techIcon: "Git"
             },
             {
-                title: "CI/CD",
-                link: ""
+                title: "Azure",
+                link: "",
+                techIcon: "Azure"
             },
             {
                 title: "BootStrap",
-                link: ""
+                link: "",
+                techIcon: "Bootstrap"
             },
         ]
     },
