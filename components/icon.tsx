@@ -78,9 +78,9 @@ const Icons: {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="linkedin-icon">
-        <path 
+        <path
           id="Vector"
-          d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" 
+          d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"
           fill="#FFFFFF"
         />
       </g>
@@ -95,7 +95,7 @@ const Icons: {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="vscode-icon">
-        <path 
+        <path
           id="Vector"
           d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"
           fill="#FFFFFF"
@@ -103,11 +103,39 @@ const Icons: {
       </g>
     </svg>
   ),
+  neoVim: (
+    <svg
+      width="25"
+      height="26"
+      viewBox="0 0 25 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="neoVim-icon">
+        <path
+          d="M2.214 4.954v13.615L7.655 24V10.314L3.312 3.845 2.214 4.954zm4.999 17.98l-4.557-4.548V5.136l.59-.596 3.967 5.908v12.485zm14.573-4.457l-.862.937-4.24-6.376V0l5.068 5.092.034 13.385zM7.431.001l12.998 19.835-3.637 3.637L3.787 3.683 7.43 0z"
+          fill="white"
+        ></path>
+      </g>
+    </svg>
+  ),
   bio: (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-smile">
-      <circle cx="12" cy="12" r="10"/>
-      <path id="Vector" d="M8 14s1.5 2 4 2 4-2 4-2" fill="#FFFFFF"/>
-      <line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="lucide lucide-smile"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path id="Vector" d="M8 14s1.5 2 4 2 4-2 4-2" fill="#FFFFFF" />
+      <line x1="9" x2="9.01" y1="9" y2="9" />
+      <line x1="15" x2="15.01" y1="9" y2="9" />
     </svg>
   ),
   udemy: (
@@ -171,16 +199,18 @@ const Icons: {
   ),
 };
 
-const Icon = ({ type, color = "#fff" } : { type: string, color?: string }) => {
+const Icon = ({ type, color = "#fff" }: { type: string; color?: string }) => {
   return (
-    <div style={{
-      backgroundColor: color
-    }}
-    className="flex items-center justify-center w-10 h-10 rounded-lg shadow-grid shrink-0"
-    > 
+    <div
+      style={{
+        backgroundColor: color,
+      }}
+      className="flex items-center justify-center w-10 h-10 rounded-lg shadow-grid shrink-0"
+    >
       {Icons[type]}
     </div>
   );
 };
 
 export default Icon;
+
