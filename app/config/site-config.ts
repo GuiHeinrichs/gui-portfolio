@@ -21,6 +21,9 @@ export interface GridItemInterface {
   buttonLink?: string;
   /*Project*/
   stars?: number;
+  projectImage?: string;
+  projectDescription?: string;
+  inDevelopment?: boolean;
   // Techs
   techs?: TechItemType[];
   image?: string;
@@ -159,54 +162,39 @@ const GridItems: GridItemInterface[] = [
     ],
   },
   {
-    layout: "2x2",
-    type: "social",
-    title: "Twitter",
-    icon: "twitter",
-    username: "@GuiHeinrichsDev",
-    buttonTitle: "Follow",
-    buttonLink: "https://twitter.com/GuiHeinrichsDev",
-    color: "#1DA1F2",
-    description:
-      "Full Stack Developer who enjoys coding and experimenting with new technologies.",
-  },
-  {
-    layout: "2x1",
+    layout: "2x4",
     type: "project",
-    title: "API com Express",
+    title: "Car Hub",
     icon: "github",
     color: "#070707",
-    buttonLink: "https://github.com/GuiHeinrichs/API-com-Express",
+    buttonLink: "https://carhub-sigma.vercel.app/",
     stars: 2,
+    projectImage: "/project-images/carhub-presentation.png",
+    projectDescription: "Plataforma de vendas de veículos com interface moderna e funcionalidades completas.",
   },
   {
-    layout: "2x1",
+    layout: "2x4",
     type: "project",
-    title: "Nutri Table Project",
+    title: "YUI Coffee",
     icon: "github",
     color: "#070707",
-    buttonLink: "https://github.com/GuiHeinrichs/nutriTableProject",
+    buttonLink: "https://yui-coffee.vercel.app/",
     stars: 1,
+    projectImage: "/project-images/YUI-coffee-presentation.png",
+    projectDescription: "Site de venda de cafés e acessórios com design elegante e responsivo.",
   },
   {
-    layout: "2x1",
+    layout: "2x4",
     type: "project",
-    title: "Visual Studio Code Configuration",
-    icon: "vscode",
-    color: "#3ca5ea",
-    buttonLink:
-      "https://github.com/GuiHeinrichs/vscode-config/blob/main/settings.json",
+    title: "Stock Pro",
+    icon: "github",
+    color: "#070707",
+    buttonLink: "#",
     stars: 0,
-  },
-  {
-    layout: "2x1",
-    type: "project",
-    title: "NeoVim Configuration",
-    icon: "neoVim",
-    color: "#067abb",
-    buttonLink: "https://github.com/GuiHeinrichs/nvim-config",
-    stars: 0,
-  },
+    projectImage: "/project-images/stock-pro-presentation.png",
+    projectDescription: "Sistema de gerenciamento e controle de estoque.",
+    inDevelopment: true,
+  }
 ];
 
 export const siteConfig = {
